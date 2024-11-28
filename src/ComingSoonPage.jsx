@@ -35,9 +35,9 @@ const ComingSoonPage = () => {
         <div className="absolute top-4 right-4">
           <button
             onClick={handleToggle}
-            className="bg-gray-200 dark:bg-[#2596be] text-black dark:text-white px-4 py-2 rounded-lg flex items-center gap-2"
+            className="bg-white dark:bg-[#2596be] text-black dark:text-white px-4 py-2 rounded-lg flex items-center gap-2"
           >
-            {darkMode ? <FaSun className="w-[25px] h-[25px]" /> : <FaMoon className="w-[25px] h-[25px]" />}
+            {darkMode ? <FaSun className="md:w-[25px] md:h-[25px]" /> : <FaMoon className="md:w-[25px] md:h-[25px]" />}
           </button>
         </div>
 
@@ -105,10 +105,10 @@ const ComingSoonPage = () => {
           <p className="text-sm text-center">
             Contact us: {" "}
             <a
-              href="mailto:info@example.com"
-              className="underline hover:text-blue-400 transition duration-300 mb-8"
+              href="mailto:contact@bros-code.com"
+              className="underline hover:text-[#2596be] transition duration-300 mb-8"
             >
-              info@example.com
+              contact@bros-code.com
             </a>
           </p>
         </div>
