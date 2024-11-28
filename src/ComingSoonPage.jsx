@@ -51,7 +51,7 @@ const ComingSoonPage = () => {
         </div>
 
         {/* Animation */}
-        <div className="mt-8 w-full">
+        <div className="md:-mt-32 w-full">
           <Player
             autoplay
             loop
