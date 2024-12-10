@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 import { FaSun, FaMoon, FaFacebook, FaInstagram } from "react-icons/fa"; // Import icons for light/dark mode and social media
 
 import animationData from "./assets/Computer Animation.json"; // Replace with your downloaded JSON file
-import logo from "./assets/broscode.png";
+import logo from "./assets/SVE PLAVO.png";
 
 const ComingSoonPage = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,7 +28,11 @@ const ComingSoonPage = () => {
   }, [darkMode]);
 
   return (
-    <div className={`flex items-center justify-center min-h-screen px-4 ${darkMode ? "bg-black text-white" : "bg-white text-black"}`}>
+    <div
+      className={`flex items-center justify-center min-h-screen px-4 ${
+        darkMode ? "bg-gradient-to-r from-gray-800 via-black to-gray-800 text-white" : "bg-gradient-to-r from-blue-300 via-white to-blue-300 text-black"
+      }`}
+    >
       {/* Main Container */}
       <div className="text-center w-full">
         {/* Toggle Button */}
@@ -86,7 +90,7 @@ const ComingSoonPage = () => {
             href="https://instagram.com/bros_c0de"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-pink-500 transition duration-300"
+            className="hover:text-pink-500 hover:scale-125 transition duration-300"
           >
             <FaInstagram className="w-[50px] h-[50px]" />
           </a>
@@ -94,7 +98,7 @@ const ComingSoonPage = () => {
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-600 transition duration-300"
+            className="hover:text-blue-600 hover:scale-125 transition duration-300"
           >
             <FaFacebook className="w-[50px] h-[50px]" />
           </a>
@@ -106,7 +110,7 @@ const ComingSoonPage = () => {
             Contact us: {" "}
             <a
               href="mailto:contact@bros-code.com"
-              className="underline hover:text-[#2596be] transition duration-300 mb-8"
+              className="underline hover:text-[#2596be]  transition duration-300 mb-8"
             >
               contact@bros-code.com
             </a>
